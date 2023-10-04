@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>Tampil Data Matakuliah</title>
+    <link rel="stylesheet" type="text"href=<?php echo base_url()?>>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
             
             <tr>
                 <td colspan="3" align="center">
-                    <a href="<?= ('matakuliah');?>">Kembali</a>
+                    <a href="<?= base_url('matakuliah');?>">Kembali</a>
                 </td>
             </tr>
         </table>
