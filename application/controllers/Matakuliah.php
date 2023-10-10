@@ -3,7 +3,7 @@ class matakuliah extends CI_Controller
 {
     public function index()
     {
-        $this->load->view('view_form_matakuliah');
+        $this->load->view('view-form-matakuliah');
     }
 
     public function cetak()
@@ -12,7 +12,7 @@ class matakuliah extends CI_Controller
         $this->form_validation->set_rules('nama', 'Nama Matakuliah', 'required|min_length[3]', ['required' => 'Nama Matakuliah Harus Diisi', 'min_lenght' => 'Nama Terlalu Pendek']);
 
         if ($this->form_validation->run() != true) {
-            $this->load->view('view_form_matakuliah');
+            $this->load->view('view-form-matakuliah');
         } else {
             $data = [
                 'kode' => $this->input->post('kode'),
@@ -20,7 +20,7 @@ class matakuliah extends CI_Controller
                 'sks' => $this->input->post('sks')
             ];
 
-            $this->load->view('view_data_matakuliah', $data);
+            $this->load->view('view-data-matakuliah', $data);
         }
     }
 }
