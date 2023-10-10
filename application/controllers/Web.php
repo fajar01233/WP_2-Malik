@@ -7,11 +7,15 @@ class Web extends CI_Controller{
         $this->load->helper('url');
     }
 
-    public function about(){
+    public function index(){
         $data['judul1'] = "Halaman Depan";
-        $data['judul2'] = "Halaman About";
         $this->load->view('v_header',$data);
         $this->load->view('v_index',$data);
+        $this->load->view('v_footer',$data);
+    }
+    public function about(){
+        $data['judul2'] = "Halaman About";
+        $this->load->view('v_header',$data);
         $this->load->view('v_about',$data);
         $this->load->view('v_footer',$data);
     }
