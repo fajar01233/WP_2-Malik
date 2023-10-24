@@ -5,7 +5,9 @@
 
 <body>
     <center>
+        <?php echo validation_errors(); ?>    
         <form action="<?= base_url('matakuliah/cetak'); ?>" method="post">
+
             <table>
                 <tr>
                     <th colspan="3">
@@ -43,6 +45,7 @@
                         </select>
                     </td>
                 </tr>
+
                 <tr>
                     <td colspan="3" align="center">
                         <input type="submit" value="Submit">
