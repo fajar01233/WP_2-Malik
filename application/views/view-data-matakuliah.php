@@ -2,6 +2,8 @@
 <head>
     <title>Tampil Data Matakuliah</title>
     <link rel="stylesheet" type="text"href=<?php echo base_url()?>>
+    <link rel="stylesheet" type="text/css "href="<?php echo base_url() ?> assets/css/stylebuku.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/pustaka-booking/assets/css/stylebuku.css">
 </head>
 
 <body>

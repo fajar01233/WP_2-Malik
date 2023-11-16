@@ -2,6 +2,7 @@
     <head>
         <title>Tampilan Data Mahasiswa</title>
         <link rel="stylesheet" type="text"href=<?php echo base_url()?>>
+        
     </head>
 
     <body>

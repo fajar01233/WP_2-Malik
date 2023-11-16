@@ -64,14 +64,9 @@
             <tr>
                 <th>Jenis Kelamin</th>
                 <th>:</th>
-                <td>
-                    <select name="kelamin" id="kelamin">
-                        <option value="">Jenis Kelamin</option>
-                        <option value="Laki-Laki">Laki-Laki</option>
-                        <option value="Perempuan">Perempuan</option>
-                        <option value="Lainnya">Lainnya</option>
-                    </select>
-                </td>
+                <td><input type="radio" name="kelamin" value="laki-laki">laki-laki
+                <input type="radio" name="kelamin" value="perempuan">perempuan    
+            </td>
             </tr>
             <tr>
                 <th>Agama</th>
