@@ -1,5 +1,3 @@
-<html>
-    <body>
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
@@ -38,11 +36,9 @@
         <script>
         $('.custom-file-input').on('change', function() {
             let fileName = $(this).val().split('\\').pop();
-            $(this).next('.custom-file-label').addClass("selected").html(fileName);
-        });
+            $(this).next('.custom-file-label').addClass("selected").html(fileName);});
             $(document).ready(function() {
-                $("#table-datatable").dataTable(); 
-            }); 
+                $("#table-datatable").dataTable(); }); 
                 $('.alert-message').alert().delay(3500).slideUp('slow');
             </script>
     </body>
