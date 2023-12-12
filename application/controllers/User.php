@@ -23,11 +23,11 @@ class User extends CI_Controller
         $data['user'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array();
         $this->db->where('role_id', 1);
         $data['anggota'] = $this->db->get('user')->result_array();
-        $this->load->view('templates/header', $data);
-        $this->load->view('templates/sidebar', $data);
-        $this->load->view('templates/topbar', $data);
+        $this->load->view('admin/header', $data);
+        $this->load->view('admin/sidebar', $data);
+        $this->load->view('admin/topbar', $data);
         $this->load->view('user/anggota', $data);
-        $this->load->view('templates/footer');
+        $this->load->view('admin/footer');
     }
     public function ubahProfil()
     {
@@ -36,11 +36,11 @@ class User extends CI_Controller
         $this->form_validation->set_rules('nama', 'Nama Lengkap', 'required|trim', ['required' => 'Nama tidak Boleh Kosong']);
         
         if ($this->form_validation->run() == false) {
-            $this->load->view('templates/header', $data);
-            $this->load->view('templates/sidebar', $data);
-            $this->load->view('templates/topbar', $data);
-            $this->load->view('user/ubah-profile', $data);
-            $this->load->view('templates/footer');
+            $this->load->view('admin/header', $data);
+            $this->load->view('admin/sidebar', $data);
+            $this->load->view('admin/topbar', $data);
+            $this->load->view('user/ubahprofile', $data);
+            $this->load->view('admin/footer');
         } else {
             $nama = $this->input->post('nama', true);
             $email = $this->input->post('email', true);
